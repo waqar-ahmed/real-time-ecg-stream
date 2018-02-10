@@ -88,7 +88,7 @@ def process(a):
 
 
 
-sc = SparkContext(appName="PythonStreamingDirectKafkaWordCount", master="local[7]")
+sc = SparkContext(appName="ECGStreamingApp", master="local[7]")
 ssc = StreamingContext(sc, 1)
 ssc.checkpoint('C:/tmp/spark_temp')
 brokers = 'localhost:9092'
